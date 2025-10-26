@@ -17,6 +17,15 @@
   "engines": {
     "node": ">=18"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alperekinci99/mockgen-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alperekinci99/mockgen-cli/issues"
+  },
+  "homepage": "https://github.com/alperekinci99/mockgen-cli#readme",
+  "author": "Alper Ekinci",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.18.12",
