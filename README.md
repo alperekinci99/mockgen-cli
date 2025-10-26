@@ -32,5 +32,26 @@ npx mockgen-cli fetch \
   --count 5 \
   --out mocks/posts.json \
   --pretty
+```
+
+### 🔹 2️⃣ Generate from local snapshot
+Fetch data from a live API and instantly create randomized mock JSON:
+
+```bash
+npx mockgen-cli local \
+  --snapshot .mockgen-cli/snapshots/posts.json \
+  --count 10 \
+  --out mocks/offline.json
+```
+
+## ⚙️ Options
+
+| Option | Description | Default |
+|:--------|:-------------|:----------|
+| `--url <string>` | Full API URL (used in `fetch` mode) | — |
+| `--snapshot <path>` | Path to a local snapshot file (used in `local` mode) | — |
+| `--count <number>` | Number of mock items to generate | `1` |
+| `--out <path>` | Output JSON file path | `mocks.json` |
+| `--pretty` | Format JSON output with indentation for readability | `false` |
 
 MIT © Alper Ekinci
